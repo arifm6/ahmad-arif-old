@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import {useSelector, useDispatch} from 'react-redux'
-import {decrement, increment} from '../slices/counterSlice'
+import {toggleTheme} from "../slices/themeSlice"
 export default function Home() {
-  const count = useSelector((state) => state.counter.value)
   const dispatch = useDispatch()
-  
+  const theme = useSelector(state => state.theme.isDarkMode)
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
@@ -16,19 +14,19 @@ export default function Home() {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <p> The value of coint is {count}</p>
-        <button onClick={() => dispatch(increment())} className='w-full h-10 bg-green-400/50'>Increment</button>
-        <button onClick={() => dispatch(decrement())} className='w-full h-10 bg-red-400/50'>Decrement</button>
+        <button onClick={() => dispatch(toggleTheme())} className='w-full h-10 bg-red-400/50'>Decrement</button>
+
+        <p>The value of theme is {`${theme}`}</p>
       </main>
 
-      <footer className={styles.footer}>
+      <footer >
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
+          <span >
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
