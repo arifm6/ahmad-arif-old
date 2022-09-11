@@ -13,6 +13,7 @@ export default function App(props ) {
   const [theme, setTheme] = useState(props.siteTheme)
   useEffect(function(){
     setCookie('siteTheme', theme)
+    document.body.dataset.theme = theme;
   }, [theme])
 
   function toggleTheme(){
