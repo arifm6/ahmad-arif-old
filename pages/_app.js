@@ -1,16 +1,34 @@
 import '../styles/globals.css'
-import { store } from '../store'
-import { Provider } from 'react-redux'
 import ThemeButton from '../components/ThemeButton'
+import {useState, createContext, useEffect} from 'react'
+import { setCookie, getCookie, getCookies, deleteCookie } from 'cookies-next';
 
+export const ThemeContext = createContext();
 
-function MyApp({ Component, pageProps }) {
+export default function App(props ) {
+  // YOU NEED TO LEARN THE BELOW SYNTAX!!!
+  const {Component, pageProps} = props;
+  //load initial theme from site cookie
+
+  const [theme, setTheme] = useState(props.siteTheme)
+  useEffect(function(){
+    setCookie('siteTheme', theme)
+  }, [theme])
+
+  function toggleTheme(){
+    setTheme(prevTheme => {
+      return prevTheme === "DARK" ? "LIGHT" : "DARK"
+    })
+  }
+  
+
   return (
-    <Provider store={store}>
-      <ThemeButton />
+    <ThemeContext.Provider value={theme}>
+      <ThemeButton handleClick={toggleTheme}/>
       <Component {...pageProps} />
-    </Provider>
+    </ThemeContext.Provider>  
   )
 }
-
-export default MyApp
+App.getInitialProps = ({ctx}) => ({
+  siteTheme: getCookie("siteTheme", ctx) || "DARK"
+})
