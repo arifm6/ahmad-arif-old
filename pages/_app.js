@@ -17,7 +17,7 @@ export default function App(props ) {
 
   function toggleTheme(){
     setTheme(prevTheme => {
-      return prevTheme === "DARK" ? "LIGHT" : "DARK"
+      return prevTheme === "dark" ? "light" : "dark"
     })
   }
   
@@ -30,5 +30,5 @@ export default function App(props ) {
   )
 }
 App.getInitialProps = ({ctx}) => ({
-  siteTheme: getCookie("siteTheme", ctx) || "DARK"
+  siteTheme: getCookie("siteTheme", ctx) || "dark"
 })
