@@ -37,7 +37,10 @@ body {
   font-family: sans-serif;
   transition: background 0.25s ease-in-out;
 }
+.nav-transition{
+  transition: background 0.25s ease-in-out;
 
+}
 h1 {
   color: var(--color-text-secondary);
 }

@@ -3,7 +3,8 @@ import Image from 'next/image'
 import {useSelector, useDispatch} from 'react-redux'
 import { useContext } from 'react'
 import { ThemeContext } from './_app'
-
+import Navbar from '../components/Navbar'
+import HomeSection from '../components/HomeSection'
 
 export default function Home(props) {
   const theme = useContext(ThemeContext)
@@ -19,9 +20,10 @@ export default function Home(props) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    </Head>
+      </Head>
+      <Navbar />
       <main>
-        <p>Main Tag</p>
+        <HomeSection />
       </main>
 
       <footer >
