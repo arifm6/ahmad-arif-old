@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Color Scheme
+
+The color scheme for this project is still TBD. This is the next part that I will work on.
+
+#### Dark Mode
+12 Striking and Simple (BERT)  
+
+(#0B0C10 (Rich Black Fogra 39), #1F2833 (Gunmetal), #C5C6C7 (Silver Sand), #66FCF1 (Turqouise Blue ), #45A29E (Cadet Blue)) [Link To Coolors Page](https://coolors.co/0b0c10-1f2833-c5c6c7-66fcf1-45a29e)  and YOUTUBE https://blog.karenying.com/posts/50-shades-of-dark-mode-gray  black/grey is (181818 (DARK) and 212121 (dark but lighter)) from youtube
+
+#### Light Mode
+13 Red and Lively
