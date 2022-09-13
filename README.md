@@ -40,7 +40,8 @@ The color scheme for this project is still TBD. This is the next part that I wil
 #### Dark Mode
 12 Striking and Simple (BERT)  
 
-(#0B0C10 (Rich Black Fogra 39), #1F2833 (Gunmetal), #C5C6C7 (Silver Sand), #66FCF1 (Turqouise Blue ), #45A29E (Cadet Blue)) [Link To Coolors Page](https://coolors.co/0b0c10-1f2833-c5c6c7-66fcf1-45a29e)  and YOUTUBE https://blog.karenying.com/posts/50-shades-of-dark-mode-gray  black/grey is (181818 (DARK) and 212121 (dark but lighter)) from youtube
+(#0B0C10 (Rich Black Fogra 39), #1F2833 (Gunmetal), #C5C6C7 (Silver Sand), #66FCF1 (Turqouise Blue ), #45A29E (Cadet Blue), #212121 (used for bg on navbar), #000000 (black) used for rare sections for emphasis, #181818 used for main bg) [Link To Coolors Page](https://coolors.co/0b0c10-181818-212121-1f2833-c5c6c7-66fcf1-45a29e)  and YOUTUBE https://blog.karenying.com/posts/50-shades-of-dark-mode-gray  black/grey is (181818 (DARK) and 212121 (dark but lighter)) from youtube
 
 #### Light Mode
 13 Red and Lively
+[link to light mode coolors page](https://coolors.co/5d001e-e3e2df-e3afbc-9a1750-ee4c7c)

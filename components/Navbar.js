@@ -28,19 +28,19 @@ export default function Navbar() {
         }
       </button>
       {/**xl:static is for testing purposes only.. */}
-      <nav className={`flex flex-col justify-between w-[100vw] h-[100vh] fixed top-0 xl:fixed xl:w-[13rem] ${theme === "dark" ? "bg-[#212121]" : "bg-[#E3AFBC]"} ${menuOpen ? "" : "hidden"} xl:flex nav-transition`}>
+      <nav className={`flex flex-col justify-between w-[100vw] h-[100vh] fixed top-0 xl:fixed xl:w-[10rem] ${theme === "dark" ? "bg-[#212121]" : "bg-[#E3AFBC]"} ${menuOpen ? "" : "hidden"} xl:flex nav-transition `}>
         {/**section for my logo and title */}
         <div className={`flex flex-col items-center ${theme === "dark" ? "bg-[#000000]" : "bg-[#fff]"} pt-[4rem] xl:pt-[2rem]`} >
           {/**put logo size here as a class (in the span) ?? MAYBE NOT */}
           <img className='bg-red-400/95' src="/vercel.svg" ></img>
-          <h1 className='text-[2rem]'>RICK ROSS</h1>
+          <h1 className='text-[2rem]'>Ahmad</h1>
           <p>Web Developer</p>
         </div>
         {/*section for page links*/}
-        <ul className={`flex flex-col text-center flex-1 mt-[4rem] [&>a:hover]:text-[#66FCF1] [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:flex-1 [&>a]:p-4`}>
+        <ul className={`flex flex-col text-center flex-1 mt-[4rem] [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4`}>
           <a className='' href=''>About Me</a>
           <a href=''>My Skills</a>
-          <a href=''>Experience/Job/Work</a>
+          <a href=''>Work</a>
           <a href=''>Contact</a>
           <a className='border-b-[0.5px]' href=''>Blog?</a>
         </ul>

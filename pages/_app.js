@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import ThemeButton from '../components/ThemeButton'
 import {useState, createContext, useEffect} from 'react'
 import { setCookie, getCookie, getCookies, deleteCookie } from 'cookies-next';
-
+import Navbar from '../components/Navbar';
 export const ThemeContext = createContext();
 
 export default function App(props ) {
@@ -26,7 +26,11 @@ export default function App(props ) {
   return (
     <ThemeContext.Provider value={theme}>
       <ThemeButton handleClick={toggleTheme}/>
-      <Component {...pageProps} />
+      <Navbar />
+      {/**this padding is to adjust for the navbar */}
+      <div className='xl:pl-[10rem]'>
+        <Component {...pageProps} />
+      </div>
     </ThemeContext.Provider>  
   )
 }

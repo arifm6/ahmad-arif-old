@@ -20,7 +20,7 @@ body{
 body,
 body[data-theme="light"] {
   --color-text-primary: #DC143C;
-  --color-text-secondary: #076963;
+  --color-text-secondary: #0B0C10;
   --color-bg-primary: #E3E2DF;
   --color-bg-toggle: #1e90ff;
 }
@@ -52,5 +52,12 @@ body {
 h1 {
   color: var(--color-text-primary);
 }
+body[data-theme="dark"] a:hover{
+  /*color: var(--color-text-primary);*/
+  color: var(--color-text-primary);
+}
+body[data-theme="light"] a:hover{
+  color: var(--color-text-primary);
 
+}
 /*COPY PASTED BELOW THIS POINT*/
