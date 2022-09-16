@@ -45,3 +45,7 @@ The color scheme for this project is still TBD. This is the next part that I wil
 #### Light Mode
 13 Red and Lively
 [link to light mode coolors page](https://coolors.co/5d001e-e3e2df-e3afbc-9a1750-ee4c7c)
+
+link to home images: https://dribbble.com/shots/19219392-FutureBrutalism (light), https://dribbble.com/shots/14290454-Futuristic-space-beauty-city (dark)
+
+link for pulse animation: https://www.florin-pop.com/blog/2019/03/css-pulse-effect/

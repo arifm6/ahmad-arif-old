@@ -9,7 +9,7 @@ export default function HomeSection() {
   const theme = useContext(ThemeContext)
   return (
     //add transition to this
-    <div className='h-[100vh] w-[100%] relative -z-[50] border-2'>
+    <div className='h-[100vh] w-[100%] relative -z-[50]'>
         <Image 
           src={theme === 'dark' ? heroImageDark : heroImageLight} 
           alt='Cyber City'
