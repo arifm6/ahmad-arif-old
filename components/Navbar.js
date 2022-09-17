@@ -30,7 +30,7 @@ export default function Navbar() {
       {/**xl:static is for testing purposes only.. */}
       <nav className={`flex flex-col justify-between w-[100vw] h-[100vh] fixed top-0 xl:fixed xl:w-[10rem] ${theme === "dark" ? "bg-[#212121]" : "bg-[#E3AFBC]"} ${menuOpen ? "" : "hidden"} xl:flex nav-transition `}>
         {/**section for my logo and title */}
-        <div className={`flex flex-col items-center ${theme === "dark" ? "bg-[#000000]" : "bg-[#fff]"} pt-[4rem] xl:pt-[2rem]`} >
+        <div className={`flex flex-col items-center ${theme === "dark" ? "bg-[#000000]" : "bg-[#fff]"} pt-[4rem] xl:pt-[2rem] nav-transition`} >
           {/**put logo size here as a class (in the span) ?? MAYBE NOT */}
           <img className='bg-red-400/95' src="/vercel.svg" ></img>
           <h1 className='text-[2rem]'>Ahmad</h1>

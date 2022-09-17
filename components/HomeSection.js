@@ -14,7 +14,7 @@ export default function HomeSection() {
           src={theme === 'dark' ? heroImageDark : heroImageLight} 
           alt='Cyber City'
           layout='fill'
-          className='pp'
+          className='object-cover'
           />
     </div>
   )
