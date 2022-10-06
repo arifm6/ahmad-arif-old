@@ -3,11 +3,14 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ThemeContext } from '../pages/_app'
 import { useContext } from 'react'
-
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+//https://stackoverflow.com/questions/53262263/target-active-link-when-the-route-is-active-in-next-js
+//https://dev.to/yuridevat/how-to-add-styling-to-an-active-link-in-nextjs-593e
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const theme = useContext(ThemeContext)
-
+  const router = useRouter();
   function toggleMenu() {
     setMenuOpen(prevMenuState => !prevMenuState)
   }

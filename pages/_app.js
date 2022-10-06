@@ -12,7 +12,7 @@ export default function App(props) {
   //some code is redundant because used for ssg but will leave because still not sure what ot use.
   const [theme, setTheme] = useState(props.siteTheme || "light")
   useEffect(function () {
-    //setCookie('siteTheme', theme)
+    setCookie('siteTheme', theme)
     document.body.dataset.theme = theme;
   }, [theme])
 
@@ -34,9 +34,8 @@ export default function App(props) {
     </ThemeContext.Provider>
   )
 }
-/*
+
 //remove below to switch to SSG
 App.getInitialProps = ({ ctx }) => ({
   siteTheme: getCookie("siteTheme", ctx)
 })
-*/
