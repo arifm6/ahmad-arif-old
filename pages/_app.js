@@ -36,6 +36,7 @@ export default function App(props) {
 }
 
 //remove below to switch to SSG
-App.getInitialProps = ({ ctx }) => ({
+App.getServerSideProps = ({ ctx }) => ({
+  
   siteTheme: getCookie("siteTheme", ctx)
 })

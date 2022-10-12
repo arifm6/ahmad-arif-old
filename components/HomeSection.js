@@ -12,9 +12,11 @@ export default function HomeSection() {
     <div className='h-[100vh] w-[100%] relative -z-[50]'>
         <Image 
           src={theme === 'dark' ? heroImageDark : heroImageLight} 
-          alt='Cyber City'
+          alt={theme === 'dark' ? 'Cyber City' : 'Junkyard'}
           layout='fill'
+
           className='object-cover'
+          placeholder='blur'
           />
     </div>
   )
