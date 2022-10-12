@@ -25,18 +25,20 @@ export default function App(props) {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <ThemeButton handleClick={toggleTheme} />
-      <Navbar />
-      {/**this padding is to adjust for the navbar */}
       <div className='xl:pl-[10rem]'>
         <Component {...pageProps} />
       </div>
+      {/**this padding is to adjust for the navbar */}
+
+      <ThemeButton handleClick={toggleTheme} />
+      <Navbar />
     </ThemeContext.Provider>
+    
   )
 }
 
 //remove below to switch to SSG
-App.getServerSideProps = ({ ctx }) => ({
+App.getInitialProps = ({ ctx }) => ({
   
   siteTheme: getCookie("siteTheme", ctx)
 })

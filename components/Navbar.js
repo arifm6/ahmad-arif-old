@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       {/**THIS BUTTON IS FOR THE CLOSE/OPEN MENU */}
-      <button className='fixed top-[1rem] right-[1rem] z-[100] xl:hidden' onClick={toggleMenu}>
+      <button className='fixed top-[1rem] right-[1rem] z-[100] xl:hidden' aria-label='hamburger menu' onClick={toggleMenu}>
         {menuOpen ?
 
           <svg className='w-[3rem] h-[3rem] text-[#FFF] bg-black' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill='currentColor'>
