@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection'
 import Link from 'next/link'
 
-export default function test1(props) {
+export default function Test1Page(props) {
   const theme = useContext(ThemeContext)
 
   return (
