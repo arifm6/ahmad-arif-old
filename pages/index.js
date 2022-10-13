@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { ThemeContext } from './_app'
 import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection'
+import Link from 'next/link'
 
 export default function Home(props) {
   const theme = useContext(ThemeContext)
@@ -26,16 +27,22 @@ export default function Home(props) {
       </main>
 
       <footer >
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        <Link
+          href="/test1"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h1>Footer Tag Button</h1>
-        </a>
+        </Link>
       </footer>
     </>
   )
+}
+
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }
 
 
