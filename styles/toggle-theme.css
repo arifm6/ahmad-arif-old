@@ -1,0 +1,54 @@
+/*Inspired by https://www.florin-pop.com/blog/2019/03/css-pulse-effect/*/
+
+.celestial-icon{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+
+}
+
+.celestial-icon.pulse-moon {
+    border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+.celestial-icon.pulse-sun {
+    border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	animation: pulse-yellow 2s infinite;
+}
+
+@keyframes pulse-yellow {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(252, 229, 112, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(252, 229, 112, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(252, 229, 112, 0);
+	}
+}
+

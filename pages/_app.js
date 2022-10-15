@@ -1,9 +1,11 @@
 import '../styles/globals.css'
+import '../styles/toggle-theme.css'
 import ThemeButton from '../components/ThemeButton'
 import { useState, createContext, useEffect } from 'react'
 import { setCookie, getCookie, getCookies, deleteCookie } from 'cookies-next';
 import Navbar from '../components/Navbar';
 export const ThemeContext = createContext();
+
 
 export default function App(props) {
   // YOU NEED TO LEARN THE BELOW SYNTAX!!!

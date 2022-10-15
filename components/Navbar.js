@@ -40,7 +40,7 @@ export default function Navbar() {
           <p>Web Developer</p>
         </div>
         {/*section for page links*/}
-        <ul className={`flex flex-col text-center flex-1 mt-[4rem] [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4`}>
+        <ul className={`flex flex-col text-center flex-1 [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center`}>
           <a className='' href=''>About Me</a>
           <a href=''>My Skills</a>
           <a href=''>Work</a>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <a className='border-b-[0.5px]' href=''>Blog?</a>
         </ul>
         {/**section for external links ie github, linkedin, email  */}
-        <ul className='flex justify-center [&>a]:mx-[1rem] text-center flex-1 items-center [&>a:hover]:text-[#66FCF1]'>
+        <ul className='flex justify-center [&>a]:mx-[1rem] items-center text-center flex-[0.5] [&>a:hover]:text-[#66FCF1]'>
           <a className='' href=''>
             <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 448 512" fill='currentColor'><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" /></svg>
           </a>
