@@ -6,9 +6,11 @@ import { ThemeContext } from '../pages/_app'
 import heroImageLight from '../public/home-hero-light.webp'
 
 export default function HomeSection() {
-  const theme = useContext(ThemeContext)
+  const theme = useContext(ThemeContext) 
   return (
     //add transition to this
+    <>
+    {/** removing image... does not add content to website.
     <div className='h-[100vh] w-[100%] relative -z-[50]'>
         <Image 
           src={theme === 'dark' ? heroImageDark : heroImageLight} 
@@ -19,5 +21,7 @@ export default function HomeSection() {
           placeholder='blur'
           />
     </div>
+     */}
+    </>
   )
 }
