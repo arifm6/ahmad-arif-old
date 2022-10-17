@@ -4,6 +4,7 @@ import ThemeButton from '../components/ThemeButton'
 import { useState, createContext, useEffect } from 'react'
 import { setCookie, getCookie, getCookies, deleteCookie } from 'cookies-next';
 import Navbar from '../components/Navbar';
+import MouseTrail from '../components/MouseTrail';
 export const ThemeContext = createContext();
 
 
@@ -27,7 +28,9 @@ export default function App(props) {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <div className='xl:pl-[10rem]'>
+      <div className="xl:ml-[10rem] w-[100%] xl:w-[calc(100%-10rem)]">
+        <MouseTrail />
+
         <Component {...pageProps} />
       </div>
       {/**this padding is to adjust for the navbar */}
