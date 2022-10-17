@@ -283,7 +283,7 @@ canvas.addEventListener('mousemove', function(e) {
     }
     return (
         <canvas id="nokey" width={typeof window !== 'undefined' && canvas.getAttribute('width')} height={typeof window !== 'undefined' && canvas.getAttribute('height')} className="h-[100vh] w-[100%]">
-            Your Browser Don't Support Canvas
+            Your Browser Does not Support Canvas. Try a Different Browser For The Full Experience
         </canvas>
     )
 
