@@ -5,6 +5,9 @@ import { useState, useEffect, useRef } from "react";
 export default function CustomCursor() {
   const cursorRef = useRef(null)
   useEffect(() => {
+    document.documentElement.style.setProperty('--x',-100 +'px');
+    document.documentElement.style.setProperty('--y',-100+'px');
+
     if (cursorRef.current == null || cursorRef == null)
         return;
     document.addEventListener('mousemove', e => {
