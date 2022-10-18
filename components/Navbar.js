@@ -43,7 +43,7 @@ export default function Navbar() {
           <p>Web Developer</p>
         </div>
         {/*section for page links*/}
-        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-y-[0.25px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center nav-link-hover`}>
+        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-y-[0.25px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#0B0C10]"} [&>a]:p-4 justify-center nav-link-hover`}>
           <a className='border-t-[0.5px]' href=''>About Me</a>
           <a href=''>My Skills</a>
           <a href=''>Work</a>
@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
         {/**section for external links ie github, linkedin, email  */}
         <div className='flex justify-evenly flex-[0.5] [&>a]:w-[2rem] [&>a]:h-[2rem] xl:[&>a]:h-[4rem]   xl:[&>a]:flex-1 [&>a]:flex [&>a]:items-center [&>a]:justify-center '>
-        <a href='' className='socials' ><FontAwesomeIcon className="fa-mask fa-custom  " icon={faLinkedin}  /></a>
+        <a href='' className='socials' ><FontAwesomeIcon className="fa-mask fa-custom " icon={faLinkedin}  /></a>
         <a href='' className='socials'> <FontAwesomeIcon className="fa-mask fa-custom rounded-[50%] " icon={faGithub}   /></a>
         <a href='' className='socials'> <FontAwesomeIcon className="fa-mask fa-custom rounded-[50%]" icon={faBitcoin}   /></a>
 
