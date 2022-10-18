@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faBitcoin  } from '@fortawesome/free-brands-svg-icons'
-import { faLink, faSquareFull } from '@fortawesome/free-solid-svg-icons'
+import { faCircle, faLink, faRectangleAd, faSquareFull } from '@fortawesome/free-solid-svg-icons'
 //https://stackoverflow.com/questions/53262263/target-active-link-when-the-route-is-active-in-next-js
 //https://dev.to/yuridevat/how-to-add-styling-to-an-active-link-in-nextjs-593e
 export default function Navbar() {
@@ -51,10 +51,10 @@ export default function Navbar() {
           <a className='border-b-[0.5px]' href=''>Blog?</a>
         </div>
         {/**section for external links ie github, linkedin, email  */}
-        <div className='flex justify-evenly flex-[0.5] [&>a]:h-[2rem] [&>a]:w-[2rem] [&>a]:flex [&>a]:items-center [&>a]:justify-center '>
-        <a href='' ><FontAwesomeIcon className="fa-mask fa-custom " icon={faLinkedin} mask={faSquareFull } inverse /></a>
-        <a href=''> <FontAwesomeIcon className="fa-mask fa-custom" icon={faGithub}  mask={faSquareFull } inverse /></a>
-        <a href=''> <FontAwesomeIcon className="fa-mask fa-custom" icon={faBitcoin}  mask={faSquareFull } inverse /></a>
+        <div className='flex justify-evenly flex-[0.5] [&>a]:w-[2rem] [&>a]:h-[2rem] xl:[&>a]:h-[4rem]   xl:[&>a]:flex-1 [&>a]:flex [&>a]:items-center [&>a]:justify-center '>
+        <a href='' className='socials' ><FontAwesomeIcon className="fa-mask fa-custom  " icon={faLinkedin}  /></a>
+        <a href='' className='socials'> <FontAwesomeIcon className="fa-mask fa-custom rounded-[50%] " icon={faGithub}   /></a>
+        <a href='' className='socials'> <FontAwesomeIcon className="fa-mask fa-custom rounded-[50%]" icon={faBitcoin}   /></a>
 
         </div>
       </nav>

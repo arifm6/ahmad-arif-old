@@ -103,21 +103,24 @@ body[data-theme="light"] a:hover{
 }
 
 .fa-custom{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.socials:hover .fa-mask{
+  color: var(--color-bg-secondary);
 }
 .fa-mask{
+
   background: 
+
     radial-gradient(circle 1.5rem 
                     at var(--x,0) var(--y,0), 
-                    var(--color-text-primary) 100%,var(--color-text-secondary) 100%) 
+                    var(--color-text-primary) 100%,var(--color-bg-secondary) 100%) 
                     fixed;
-  color: var(--color-bg-secondary);
-  
+  color: var(--color-text-secondary); 
 }
-.fa-brands-custom > a{
-  height: 2rem;
-  width: 2rem;
+.fa-mask:hover{
+  color: var(--color-bg-secondary);
 }
 .nav-link-hover > a{
   border-left: 0.5px;
