@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       {/**THIS BUTTON IS FOR THE CLOSE/OPEN MENU */}
-      <button className='fixed top-[1rem] right-[1rem] z-[100] xl:hidden' aria-label='hamburger menu' onClick={toggleMenu}>
+      <button className=' fixed top-[1rem] right-[1rem] z-[100] xl:hidden' aria-label='hamburger menu' onClick={toggleMenu}>
         {menuOpen ?
 
           <svg className='w-[3rem] h-[3rem] text-[#FFF] bg-black' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill='currentColor'>
@@ -34,7 +34,7 @@ export default function Navbar() {
         }
       </button>
       {/**xl:static is for testing purposes only.. */}
-      <nav className={`flex flex-col justify-between w-[100vw] h-[100vh] fixed top-0 xl:fixed xl:w-[10rem] ${theme === "dark" ? "bg-[#212121]" : "bg-[#E3AFBC]"} ${menuOpen ? "" : "hidden"} xl:flex nav-transition `}>
+      <nav className={` flex flex-col justify-between w-[100vw] h-[100vh] fixed top-0 xl:fixed xl:w-[10rem] ${theme === "dark" ? "bg-[#212121]" : "bg-[#E3AFBC]"} ${menuOpen ? "" : "hidden"} xl:flex nav-transition `}>
         {/**section for my logo and title */}
         <div className={`flex flex-col items-center ${theme === "dark" ? "bg-[#000000]" : "bg-[#fff]"} pt-[4rem] xl:pt-[2rem] nav-transition`} >
           {/**put logo size here as a class (in the span) ?? MAYBE NOT */}
@@ -43,7 +43,7 @@ export default function Navbar() {
           <p>Web Developer</p>
         </div>
         {/*section for page links*/}
-        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center`}>
+        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-t-[0.5px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center scale-links`}>
           <a className='' href=''>About Me</a>
           <a href=''>My Skills</a>
           <a href=''>Work</a>
@@ -51,8 +51,8 @@ export default function Navbar() {
           <a className='border-b-[0.5px]' href=''>Blog?</a>
         </div>
         {/**section for external links ie github, linkedin, email  */}
-        <div className='flex justify-evenly flex-[0.5] [&>a]:h-[2rem] [&>a]:w-[2rem] [&>a]:flex [&>a]:items-center [&>a]:justify-center'>
-        <a href='' ><FontAwesomeIcon className="fa-mask fa-custom" icon={faLinkedin} mask={faSquareFull } inverse /></a>
+        <div className='flex justify-evenly flex-[0.5] [&>a]:h-[2rem] [&>a]:w-[2rem] [&>a]:flex [&>a]:items-center [&>a]:justify-center '>
+        <a href='' ><FontAwesomeIcon className="fa-mask fa-custom " icon={faLinkedin} mask={faSquareFull } inverse /></a>
         <a href=''> <FontAwesomeIcon className="fa-mask fa-custom" icon={faGithub}  mask={faSquareFull } inverse /></a>
         <a href=''> <FontAwesomeIcon className="fa-mask fa-custom" icon={faBitcoin}  mask={faSquareFull } inverse /></a>
 

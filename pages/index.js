@@ -27,9 +27,6 @@ export default function Home(props) {
       <main>
         <HomeSection />
       </main>
-          <div className='mask'>
-            <h1> Footer Tag Button</h1>
-          </div>
       <footer >
         <Link
           href="/test1"

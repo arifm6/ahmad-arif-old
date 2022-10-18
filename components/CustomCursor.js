@@ -10,22 +10,21 @@ export default function CustomCursor() {
     document.addEventListener('mousemove', e => {
         if (cursorRef.current == null)
               return;
-        
         document.documentElement.style.setProperty('--x',(e.clientX)+'px');
         document.documentElement.style.setProperty('--y',(e.clientY)+'px');
               
-    })
-    document.addEventListener('mouseover', e => {
     })
     document.addEventListener('click', () => {
     if (cursorRef.current == null)
         return;
     cursorRef.current.classList.add("expand");
+    
     setTimeout(() => {
         if (cursorRef.current == null)
               return;
         cursorRef.current.classList.remove("expand");
-    }, 500)
+    }, 300)
+    
     })
   }, [])
   return (
