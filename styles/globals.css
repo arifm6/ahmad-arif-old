@@ -129,7 +129,6 @@ body[data-theme="light"] a:hover{
 
   border-color:  var(--color-text-primary);
 }
-@media only screen and (min-width: 1280px) {
   .cursor {
   width: 3rem;
   height: 3rem;
@@ -151,4 +150,3 @@ body[data-theme="light"] a:hover{
   }
 
   
-}
