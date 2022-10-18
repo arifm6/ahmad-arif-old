@@ -9,6 +9,11 @@ a {
 }
 body{
   min-height: 100vh;
+  cursor: none;
+  
+}
+a{
+  cursor: none;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,7 +27,9 @@ body[data-theme="light"] {
   --color-text-primary: #DC143C;
   --color-text-secondary: #0B0C10;
   --color-bg-primary: #E3E2DF;
-  --color-bg-toggle: #1e90ff;
+  --color-bg-secondary: #E3AFBC;
+
+  
 }
 
 body[data-theme="dark"] {
@@ -52,32 +59,51 @@ body {
 h1 {
   color: var(--color-text-primary);
 }
+/*
+anchor hover will be handled by spotlight
 body[data-theme="dark"] a:hover{
   /*color: var(--color-text-primary);*/
-  /*color: var(--color-text-primary);*/
+  /*color: var(--color-text-primary);
 }
 body[data-theme="light"] a:hover{
   color: var(--color-text-primary);
 
-}
-
+}*/
 .cursor {
+  content: "";
   width: 3rem;
   height: 3rem;
-  border: 1px solid white;
+  border: 1px solid var(--color-text-secondary);
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   transform-origin: 100% 100%;
   pointer-events: none;
   transition: all 0.3s ease;
   transition-property: transform;
-  z-index: 100;
-  opacity: 1;
+  top:var(--y,0);
+  left:var(--x,0);
+  z-index: 101;
   
   }
   .expand {
     transform: scale(2);
   }
-  
+
+.mask {
+  background: 
+    radial-gradient(circle 1.5rem 
+                    at var(--x,0) var(--y,0), 
+                    var(--color-text-primary) 100%,var(--color-text-secondary) 100%) 
+                    fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-mask{
+
+}
+
   

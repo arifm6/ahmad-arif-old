@@ -6,7 +6,9 @@ import { ThemeContext } from './_app'
 import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection'
 import Link from 'next/link'
-
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+FontAwesomeIcon
 export default function Home(props) {
   const theme = useContext(ThemeContext)
 
@@ -25,14 +27,17 @@ export default function Home(props) {
       <main>
         <HomeSection />
       </main>
-
+          <div className='mask'>
+            <h1> Footer Tag Button</h1>
+          </div>
       <footer >
         <Link
           href="/test1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h1>Footer Tag Button</h1>
+                      <h1> Footer Tag Button</h1>
+
         </Link>
       </footer>
     </>

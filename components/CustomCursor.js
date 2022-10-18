@@ -10,7 +10,10 @@ export default function CustomCursor() {
     document.addEventListener('mousemove', e => {
         if (cursorRef.current == null)
               return;
-        cursorRef.current.setAttribute("style", "top: " + (e.pageY) + "px; left: " + (e.pageX) + "px;")
+        
+        document.documentElement.style.setProperty('--x',(e.clientX)+'px');
+        document.documentElement.style.setProperty('--y',(e.clientY)+'px');
+              
     })
     document.addEventListener('mouseover', e => {
     })
