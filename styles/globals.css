@@ -127,9 +127,6 @@ body[data-theme="light"] a:hover{
   color: var(--color-text-secondary); 
   transition: all 1s ease;
 }
-.fa-mask:hover{
-  color: var(--color-bg-primary);
-}
 .nav-link-hover > a:hover{
   border-left: 0.5px solid transparent;
   border-right: 0.5px solid transparent;
