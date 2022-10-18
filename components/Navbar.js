@@ -43,7 +43,7 @@ export default function Navbar() {
           <p>Web Developer</p>
         </div>
         {/*section for page links*/}
-        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-[0.25px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center nav-link-hover`}>
+        <div className={`mask flex flex-col text-center flex-1 [&>a]:border-y-[0.25px] ${theme === 'dark' && "[&>a]:border-[#C5C6C7]"} ${theme === 'light' && "[&>a]:border-[#9A1750]"} [&>a]:p-4 justify-center nav-link-hover`}>
           <a className='border-t-[0.5px]' href=''>About Me</a>
           <a href=''>My Skills</a>
           <a href=''>Work</a>
