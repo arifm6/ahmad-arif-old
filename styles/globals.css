@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --color-text-primary: #DC143C;
+  --color-text-secondary: #0B0C10;
+  --color-bg-primary: #E3E2DF;
+  --color-bg-secondary: #E3AFBC;
+
+}
 
 a {
   color: inherit;
