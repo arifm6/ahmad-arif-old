@@ -124,7 +124,6 @@ body[data-theme="light"] a:hover{
                     at var(--x,0) var(--y,0), 
                     var(--color-text-primary) 100%,var(--color-bg-secondary) 100%) 
                     fixed;
-  color: var(--color-text-secondary); 
   transition: all 1s ease;
 }
 .nav-link-hover > a:hover{
