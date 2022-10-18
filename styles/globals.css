@@ -102,8 +102,18 @@ body[data-theme="light"] a:hover{
   -webkit-text-fill-color: transparent;
 }
 
+.fa-custom{
+  width: 2rem;
+  height: 2rem;
+}
 .fa-mask{
-
+  background: 
+    radial-gradient(circle 1.5rem 
+                    at var(--x,0) var(--y,0), 
+                    var(--color-text-primary) 100%,var(--color-text-secondary) 100%) 
+                    fixed;
+  color: var(--color-bg-secondary);
+  
 }
 
   

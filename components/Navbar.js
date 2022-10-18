@@ -51,17 +51,15 @@ export default function Navbar() {
           <a className='border-b-[0.5px]' href=''>Blog?</a>
         </div>
         {/**section for external links ie github, linkedin, email  */}
-        <div className='flex justify-center [&>a]:mx-[1rem] text-center flex-[0.5]  '>
-          <a className='text-[2rem]' href=''>
-          <FontAwesomeIcon className="text-[2rem]" icon={faLinkedin}></FontAwesomeIcon>
-  
-          </a>
-          <a className='' href=''>
-          <FontAwesomeIcon icon={faGithub} className=""></FontAwesomeIcon>
-          </a>
-          <a className='' href=''>
-          <FontAwesomeIcon icon={faBitcoin} className=""></FontAwesomeIcon>
-          </a>
+        <div className='flex justify-evenly [&>a]:mx-[1rem] flex-[0.5]  '>
+        <a href=''><FontAwesomeIcon
+      className="fa-mask fa-custom"
+      icon={faLinkedin}
+      mask={faSquareFull }
+      inverse
+    /></a>
+          <FontAwesomeIcon className="fa-custom" icon={faGithub} ></FontAwesomeIcon>
+          <FontAwesomeIcon className="fa-custom" icon={faBitcoin} ></FontAwesomeIcon>
 
         </div>
       </nav>
